@@ -6,22 +6,29 @@ window.onload = function() {
 
     var centerY = height * .5,
         centerX = width * .5,
-        offset = height * .4,
-        speed = 0.1,
-        angle = 0;
+        xRadius = 200,
+        yRadius = 400,
+
+        xSpeed = 0.1,
+        xAngle = 0,
+        ySpeed = 0.2,
+        yAngle = 0,
+        x, y;
 
     render();
 
     function render() {
-        var y = centerY + Math.sin(angle) * offset;
-
         context.clearRect(0, 0, width, height);
+        x = centerX + Math.sin(xAngle) * xRadius;
+        y = centerY + Math.cos(yAngle) * yRadius;
+
+
         context.beginPath();
-        context.arc(centerX, y, 50, 0, Math.PI * 2, false);
+        context.arc(x, y, 10, 0, Math.PI * 2, false);
         context.fill();
 
-        angle += speed;
-
+        xAngle += xSpeed;
+        yAngle += ySpeed;
         requestAnimationFrame(render);
     }
 
