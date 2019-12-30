@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///F:/learning/CodingMath/my_coding_math/ten/index.html",
+            "url": "file:///F:/learning/CodingMath/my_coding_math/tweening/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
