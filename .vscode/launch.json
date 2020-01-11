@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///F:/learning/CodingMath/my_coding_math/intersection/index.html",
+            "url": "file:///F:/learning/CodingMath/my_coding_math/fractal/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
